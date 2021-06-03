@@ -242,45 +242,45 @@ table td {
   cursor: pointer;
 }
 
-input {
+input[type=radio] {
   display: none;
 }
 
-input:nth-of-type(1) ~ .tab_first {
+input[type=radio]:nth-of-type(1) ~ .tab_first {
   display: none;
 }
 
-input:nth-of-type(1):checked ~ .tab_first {
+input[type=radio]:nth-of-type(1):checked ~ .tab_first {
   display: block;
 }
 
-input:nth-of-type(2) ~ .tab_second {
+input[type=radio]:nth-of-type(2) ~ .tab_second {
   display: none;
 }
 
-input:nth-of-type(2):checked ~ .tab_second {
+input[type=radio]:nth-of-type(2):checked ~ .tab_second {
   display: block;
 }
 
-input:nth-of-type(3) ~ .tab_third {
+input[type=radio]:nth-of-type(3) ~ .tab_third {
   display: none;
 }
 
-input:nth-of-type(3):checked ~ .tab_third {
+input[type=radio]:nth-of-type(3):checked ~ .tab_third {
   display: block;
 }
 
-input:nth-of-type(1):checked ~ .tab_btn label:nth-of-type(1) {
+input[type=radio]:nth-of-type(1):checked ~ .tab_btn label:nth-of-type(1) {
   color: #c80a1e;
   border-color: #c80a1e;
 }
 
-input:nth-of-type(2):checked ~ .tab_btn label:nth-of-type(2) {
+input[type=radio]:nth-of-type(2):checked ~ .tab_btn label:nth-of-type(2) {
   color: #c80a1e;
   border-color: #c80a1e;
 }
 
-input:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
+input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
   color: #c80a1e;
   border-color: #c80a1e;
 }

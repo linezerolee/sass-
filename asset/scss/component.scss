@@ -138,7 +138,7 @@ table {
 
 
 //tab btn
-input {
+input[type=radio] {
   display: none;
   //tab_btn checked 해당 div 변경
   &:nth-of-type(1) ~ .tab_first{ display: none;}
