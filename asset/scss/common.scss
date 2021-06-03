@@ -1,0 +1,74 @@
+// product txt
+.product_txt {
+  margin-top : 10px;
+  text-align: left;
+  strong {
+  font-size: $fontSizeSmall;
+  font-weight : 700;
+  }
+  p{
+    font-size: $fontSizeSmall;
+    font-weight : 500;
+    margin : 8px 0;
+  }
+  span {
+    font-size: $fontSizeSmall;
+    color : $fontColorPrimary;
+  }
+}
+
+.border_bottom {
+  border-bottom : 1px solid $borderColorBottom;
+}
+
+.border_top {
+  border-top : 1px solid $borderColorBottom;
+}
+
+.company_title {
+  text-align: center;
+  padding : 60px 0;
+  h3 {
+    font-size : $titleFontSizeMid;
+    font-weight: 500;
+  }
+  span {
+    display: inline-block;
+    font-size: $fontSizeMid;
+    font-weight: 600;
+    color : $fontColorPrimary;
+    border-bottom: 1px solid $borderColorPrimary;
+    margin-bottom: 50px;
+  }
+  p{
+    font-size: $fontSizeMid;
+    color : $fontColorDarkgray;
+  }
+}
+
+.arrownumber {
+  display: flex;
+  justify-content: center;
+  align-items : center;
+  margin-bottom : 100px;
+  ol {
+        overflow: hidden;
+        text-align: center;
+    li {
+      float : left;
+      width : 30px;
+      height : 30px;
+      line-height: 30px;
+      color : $fontColorDarkgray;
+      cursor: pointer;
+      &.on {
+        color : $fontColorPrimary;
+        font-weight : 600;
+      }
+      &:hover {
+        border-radius: 5px;
+        background-color : $layoutBg;
+      }
+    }
+  }
+}
