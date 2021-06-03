@@ -1,5 +1,29 @@
 .mainbanner {
+  width: 100%;
   height: 660px;
-  background: url("../img/main/bg_main_01.jpg") no-repeat;
+}
+
+.mainbanner .swiper-wrapper .swiper-slide {
+  width: 100%;
+  float: left;
+  height: 100%;
+  background-repeat: no-repeat;
+  background-position: center center;
   background-size: cover;
+}
+
+.mainbanner .swiper-wrapper .swiper-slide.bg1 {
+  background-image: url("../img/main/bg_main_01.jpg");
+}
+
+.mainbanner .swiper-wrapper .swiper-slide.bg2 {
+  background-image: url("../img/main/bg_main_02.jpg");
+}
+
+.mainbanner .swiper-wrapper .swiper-slide.bg3 {
+  background-image: url("../img/main/bg_main_03.jpg");
+}
+
+.mainbanner .swiper-wrapper .swiper-slide.bg4 {
+  background-image: url("../img/main/bg_main_04.jpg");
 }

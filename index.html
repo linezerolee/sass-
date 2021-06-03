@@ -4,6 +4,8 @@
   <meta charset="UTF-8">
   <title>일룸</title>
   <meta name="description" content="iloom">
+  <link rel="stylesheet" href="./asset/css/swiper-bundle.css">
+  <link rel="stylesheet" href="./asset/css/swiper_customize.css">
   <link rel="stylesheet" href="./asset/css/style.css">
   <script type="text/javascript" src="./js/jquery.min.js"></script>
   <script type="text/javascript" src="./js/common.js"></script>
@@ -35,7 +37,20 @@
    </header>
  </div>
      <!-- 메인배너 영역-->
-  <div class="mainbanner"></div>
+
+     <div class="swiper-container mySwiper mainbanner">
+       <div class="swiper-wrapper">
+         <div class="swiper-slide bg1">
+         </div>
+         <div class="swiper-slide bg2">
+         </div>
+         <div class="swiper-slide bg3">
+         </div>
+         <div class="swiper-slide bg4">
+         </div>
+       </div>
+         <div class="swiper-pagination"></div>
+     </div>
      <!-- 컨텐츠 영역 -->
   <div id="wrap">
     <main>
@@ -203,5 +218,21 @@
      </div>
    </footer>
  </div>
+ <script type="text/javascript" src="./js/swiper-bundle.js"></script>
+ <script type="text/javascript">
+   let swiper = new Swiper('.mySwiper',{
+     effect: 'fade',
+     loop: true,
+     pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+        dynamicBullets : false
+      },
+      autoplay : {
+       delay : 3000,
+       disableOnInteraction : false,
+       }
+   });
+ </script>
 </body>
 </html>
