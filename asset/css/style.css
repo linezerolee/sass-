@@ -363,6 +363,51 @@ input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
   padding-left: 20px;
 }
 
+.serach_box {
+  display: inline-block;
+  width: 800px;
+  margin-left: 145px;
+  text-align: center;
+  box-sizing: border-box;
+}
+
+.serach_box .faq_form {
+  width: 100%;
+  height: 55px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.serach_box .faq_form input {
+  width: 500px;
+  height: 55px;
+  outline: none;
+  border: 3px solid #c80a1e;
+  padding-left: 20px;
+}
+
+.serach_box .faq_form .faq_img {
+  margin-left: 5px;
+  width: 55px;
+  height: 55px;
+  background: url("../img/faq/faq_search.png") center center no-repeat;
+  cursor: pointer;
+}
+
+.serach_box ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-right: 55px;
+}
+
+.serach_box ul li {
+  padding: 20px;
+  position: relative;
+}
+
 #wrap {
   width: 1320px;
   margin: 0 auto;
@@ -421,6 +466,7 @@ input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
   left: 0;
   opacity: 0;
   transition: .5s;
+  z-index: 999;
 }
 
 #wrap #header #top_nav ul li .submenu li {
