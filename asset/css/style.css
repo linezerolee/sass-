@@ -193,6 +193,10 @@ img {
   font-weight: 600;
 }
 
+.inner .faq_tit {
+  padding-top: 0;
+}
+
 .gbtn {
   display: block;
   box-sizing: border-box;
