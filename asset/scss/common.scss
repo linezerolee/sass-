@@ -1,3 +1,12 @@
+//border line
+.border_bottom {
+  border-bottom : 1px solid $borderColorBottom;
+}
+
+.border_top {
+  border-top : 1px solid $borderColorBottom;
+}
+
 // product txt
 .product_txt {
   margin-top : 10px;
@@ -17,14 +26,7 @@
   }
 }
 
-.border_bottom {
-  border-bottom : 1px solid $borderColorBottom;
-}
-
-.border_top {
-  border-top : 1px solid $borderColorBottom;
-}
-
+//company title
 .company_title {
   text-align: center;
   padding : 60px 0;
@@ -46,6 +48,7 @@
   }
 }
 
+//arrow
 .arrownumber {
   display: flex;
   justify-content: center;

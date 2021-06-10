@@ -34,8 +34,20 @@
     .content{
       min-height: 500px;
       .subbanner {
+        position : relative;
         width : 100%;
         padding : 50px 0;
+        .subbg_txt{
+          position : absolute;
+          top : 20%;
+          left : 10%;
+          color : $fontColorDarkgray;
+          line-height: 1.2;
+          p {
+            font-size : 24px;
+            font-weight: 500;
+          }
+        }
       }
       //product menu
       .pro_menu {
@@ -104,12 +116,6 @@
     }
 
     .inner{
-      // & + .inner{
-      //   margin-top: 50px;
-      //   padding-top: 50px;
-      //   border-top: 1px solid $borderColorPrimary;
-      // }
-
       &.kakao_map{
         margin-top: 20px;
       }

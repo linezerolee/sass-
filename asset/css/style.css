@@ -29,6 +29,14 @@ img {
   width: 100%;
 }
 
+.border_bottom {
+  border-bottom: 1px solid #eee;
+}
+
+.border_top {
+  border-top: 1px solid #eee;
+}
+
 .product_txt {
   margin-top: 10px;
   text-align: left;
@@ -48,14 +56,6 @@ img {
 .product_txt span {
   font-size: 14px;
   color: #c80a1e;
-}
-
-.border_bottom {
-  border-bottom: 1px solid #eee;
-}
-
-.border_top {
-  border-top: 1px solid #eee;
 }
 
 .company_title {
@@ -132,9 +132,11 @@ img {
 }
 
 .inner .box.boxflex .items {
+  position: relative;
   flex: 1;
-  padding: 0 20px;
+  margin: 0 10px;
   overflow: hidden;
+  height: 512px;
 }
 
 .inner .box.boxflex .items img {
@@ -144,6 +146,21 @@ img {
 
 .inner .box.boxflex .items img:hover {
   transform: scale(1.1);
+}
+
+.inner .box.boxflex .items .box_txt {
+  position: absolute;
+  top: 2%;
+  text-align: center;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.inner .box.boxflex .items p {
+  letter-spacing: 5px;
+  font-weight: 400;
+  font-size: 16px;
+  color: #c80a1e;
 }
 
 .inner .box ul {
@@ -204,7 +221,7 @@ img {
   box-sizing: border-box;
   width: 120px;
   height: 40px;
-  line-height: 40px;
+  line-height: 35px;
   margin-top: 40px;
   text-align: center;
   color: #747474;
@@ -225,9 +242,6 @@ table {
 table thead th {
   background: #747474;
   color: #fff;
-}
-
-table th {
   padding: 20px 15px;
   text-align: left;
   font-weight: 500;
@@ -236,7 +250,11 @@ table th {
   text-align: center;
 }
 
-table td {
+table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+table tbody tr td {
   padding: 15px;
   margin: 0;
   text-align: left;
@@ -628,6 +646,7 @@ input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
 }
 
 .mainbanner .swiper-wrapper .swiper-slide {
+  position: relative;
   width: 100%;
   float: left;
   height: 100%;
@@ -637,19 +656,37 @@ input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg1 {
-  background-image: url("../img/main/bg_main_01.jpg");
+  background-image: url("../img/main/bg_main_01.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg2 {
-  background-image: url("../img/main/bg_main_02.jpg");
+  background-image: url("../img/main/bg_main_02.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg3 {
-  background-image: url("../img/main/bg_main_03.jpg");
+  background-image: url("../img/main/bg_main_03.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg4 {
-  background-image: url("../img/main/bg_main_04.jpg");
+  background-image: url("../img/main/bg_main_04.jpeg");
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title p {
+  font-size: 20px;
 }
 
 .subpage main .container {
@@ -694,8 +731,22 @@ input[type=radio]:nth-of-type(3):checked ~ .tab_btn label:nth-of-type(3) {
 }
 
 .subpage main .container .content .subbanner {
+  position: relative;
   width: 100%;
   padding: 50px 0;
+}
+
+.subpage main .container .content .subbanner .subbg_txt {
+  position: absolute;
+  top: 20%;
+  left: 10%;
+  color: #747474;
+  line-height: 1.2;
+}
+
+.subpage main .container .content .subbanner .subbg_txt p {
+  font-size: 24px;
+  font-weight: 500;
 }
 
 .subpage main .container .content .pro_menu {

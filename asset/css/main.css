@@ -4,6 +4,7 @@
 }
 
 .mainbanner .swiper-wrapper .swiper-slide {
+  position: relative;
   width: 100%;
   float: left;
   height: 100%;
@@ -13,17 +14,35 @@
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg1 {
-  background-image: url("../img/main/bg_main_01.jpg");
+  background-image: url("../img/main/bg_main_01.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg2 {
-  background-image: url("../img/main/bg_main_02.jpg");
+  background-image: url("../img/main/bg_main_02.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg3 {
-  background-image: url("../img/main/bg_main_03.jpg");
+  background-image: url("../img/main/bg_main_03.jpeg");
 }
 
 .mainbanner .swiper-wrapper .swiper-slide.bg4 {
-  background-image: url("../img/main/bg_main_04.jpg");
+  background-image: url("../img/main/bg_main_04.jpeg");
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title {
+  position: absolute;
+  top: 20%;
+  text-align: center;
+  color: #fff;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title h2 {
+  font-size: 40px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.mainbanner .swiper-wrapper .swiper-slide .bg_title p {
+  font-size: 20px;
 }
